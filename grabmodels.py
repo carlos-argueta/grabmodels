@@ -1,7 +1,13 @@
+import argparse
+
 from DataTools import *
 from HelperTools import *
 from ModelTools import *
 
+# construct the argument parser and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-t", "--type", type=str, required=True, help="Graph Type")
+args = vars(ap.parse_args())
 
 def run_pathways_example():
     # Get the graph generation sarcasm data
@@ -70,7 +76,7 @@ def run_jammin_example():
     gnd = load_graph_generation_news_datasets()
 
     # Get the model
-    model = get_jammin_model(gsd, gnd, 2, load_stopwords(True), stemming=True, minus_diff_th=0.0, cc_th=0.3,
+    model = get_jammin_model(gsd[:200], gnd, 2, load_stopwords(True), stemming=True, minus_diff_th=0.0, cc_th=0.3,
                              centrality_th=0.0001, min_freq=1, workers=8)
 
     # Load the training, validation, and testing datasets
@@ -95,9 +101,12 @@ def run_jammin_example():
 
 
 if __name__ == '__main__':
-    # Uncomment the examples that you want to run
-    #run_pathways_example()
-    #run_minusnet_example()
-    run_jammin_example()
+    ty = args["type"]
+    if ty == "pathways":
+        run_pathways_example()
+    if ty == "minusnet":
+        run_minusnet_example()
+    if ty == "jammin":
+        run_jammin_example()
     
 

@@ -876,8 +876,6 @@ class TextsToMinusnetFeaturesTransformer(TextsToGraphFeaturesTransformer, GraphT
         # Get graph
         nodes, edges = self.generate_minusnet_graph()
 
-        print(list(nodes.keys())[:100])
-
         # Get embeddings
         self.get_embeddings()
 
