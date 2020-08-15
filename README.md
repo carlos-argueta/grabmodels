@@ -13,8 +13,17 @@ GrabModels or Graph-Based Compact Models, is a tool to create word and pattern e
 
 ## Usage
 
-Within the folder grabmodels run
-$grabmodels -t <graph_type>
+Note: The following instructions are for Ubuntu and may apply to other similar unix-based systems. For Windows, some steps may need to be modified.
+
+1. If this is the first time to use the program, you may need to make sure that the NLTK's stopwords are available. In a new terminal do the following:
+     1. $ python3
+     1. >>> import nltk
+     1. >>> nltk.download('stopwords')
+     1. >>> quit()
+     
+
+1. Within the folder grabmodels run
+$ python3 grabmodels.py -t <graph_type>
 
 Replace graph type with pathways, minusnet, or jammin to create a classifier end-to-end with one of the three different graph creation approaches.
 The code is configured to run the complete pipeline with the best reported parameters for each method. At this moment, in order to try other parameter 
