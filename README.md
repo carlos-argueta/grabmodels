@@ -1,15 +1,15 @@
 # grabmodels
 Repository with code to replicate the experiments of the upcoming paper Graph-Based Compact Textual Models for the Automatic Detection of Sarcasm.
 
-GrabModels or Graph-Based Compact Models, is a tool to create word and pattern embeddings for text classifiers. It converts text datasets to graphs in order to learn representations for the vertices of the graph.
+GrabModels or Graph-Based Compact Models, is a tool to create word and pattern embeddings for text classifiers. It converts text datasets to graphs in order to learn representations for the vertices of the graph. GrabModels is only compatible with Python 3.
 
 ## Installation
 
-1. Clone the repository with $git clone https://github.com/carlos-argueta/grabmodels.git
+1. Clone the repository with $ git clone https://github.com/carlos-argueta/grabmodels.git
 1. (Optional) Create a virtual environment
 1. Enter the grabmodels folder and install dependencies: 
-      * $cd grabmodels
-      * $pip install -r requirements.txt
+      * $ cd grabmodels
+      * $ pip3 install -r requirements.txt
 
 ## Usage
 
