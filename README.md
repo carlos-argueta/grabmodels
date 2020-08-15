@@ -1,4 +1,4 @@
-# grabmodels
+# GrabModels
 Repository with code to replicate the experiments of the upcoming paper Graph-Based Compact Textual Models for the Automatic Detection of Sarcasm.
 
 GrabModels or Graph-Based Compact Models, is a tool to create word and pattern embeddings for text classifiers. It converts text datasets to graphs in order to learn representations for the vertices of the graph. 
