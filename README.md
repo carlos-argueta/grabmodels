@@ -10,6 +10,11 @@ GrabModels or Graph-Based Compact Models, is a tool to create word and pattern e
 1. Enter the grabmodels folder and install dependencies: 
       * $ cd grabmodels
       * $ pip3 install -r requirements.txt
+1. Install DeepWalk
+     1. $ git clone https://github.com/phanein/deepwalk.git
+     1. cd deepwalk
+     1. pip install -r requirements.txt (Note: DeepWalk uses Python 2)
+     1. python setup.py install
 
 ## Usage
 
@@ -17,7 +22,7 @@ Note: The following instructions are for Ubuntu and may apply to other similar u
 
 1. If this is the first time to use the program, you may need to make sure that the NLTK's stopwords are available. In a new terminal do the following:
      1. $ python3
-     1. >>> import nltk
+     1. &gt;&gt;&gt; import nltk
      1. >>> nltk.download('stopwords')
      1. >>> quit()
      
