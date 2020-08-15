@@ -38,10 +38,18 @@ The code is configured to run the complete pipeline with the best reported hyper
 
 The available hyperparameters are:
 
-First Header | Second Header
+Hyperparameter | Description
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+graph_sarcasm_dataset | The dataset with sarcastic texts
+step | The maximum separation between words when building the graph
+stopwords_list | List of stopwords to remove. Only used if remove_stop_words = True
+graph_news_datsaset | The dataset with neutral texts. Only used with *Minusnet* and *Jammin* graphs
+
+
+                 graph_sarcasm_dataset2=None, minus_diff_th=0.0, cc_th=0.1, centrality_th=0.0001, meta_patterns=[],
+                 min_freq=1, remove_stop_words=False, stemming=False, replace_entities=False, rep_size=128, workers=-1,
+                 verbose=True):
+
 
 
 
