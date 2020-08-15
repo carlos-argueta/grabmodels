@@ -8,8 +8,8 @@ GrabModels or Graph-Based Compact Models, is a tool to create word and pattern e
 1. Clone the repository with $git clone https://github.com/carlos-argueta/grabmodels.git
 1. (Optional) Create a virtual environment
 1. Enter the grabmodels folder and install dependencies: 
-      $cd grabmodels
-      $pip install -r requirements.txt
+      * $cd grabmodels
+      * $pip install -r requirements.txt
 
 ## Usage
 
