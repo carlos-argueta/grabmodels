@@ -76,7 +76,7 @@ def run_jammin_example():
     gnd = load_graph_generation_news_datasets()
 
     # Get the model
-    model = get_jammin_model(gsd[:200], gnd, 2, load_stopwords(True), stemming=True, minus_diff_th=0.0, cc_th=0.3,
+    model = get_jammin_model(gsd, gnd, 2, load_stopwords(True), stemming=True, minus_diff_th=0.0, cc_th=0.3,
                              centrality_th=0.0001, min_freq=1, workers=8)
 
     # Load the training, validation, and testing datasets
