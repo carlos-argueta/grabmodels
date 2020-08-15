@@ -43,7 +43,7 @@ Hyperparameter | Description
 graph_sarcasm_dataset | The dataset with sarcastic texts
 step | The maximum separation between words when building the graph
 stopwords_list | List of stopwords to remove. Only used if remove_stop_words = True
-graph_news_datsaset=None | The dataset with neutral texts. Only used with *Minusnet* and *Jammin* graphs
+graph_news_datsaset=None | The dataset with neutral texts. Only used with Minusnet and Jammin graphs
 graph_sarcasm_dataset2=None | Second optional dataset with sarcasm texts to generate the Jammin patterns from. If None, the mandatory graph_sarcasm_dataset is used instead
 minus_diff_th=0.0 | The threshold used when building Minusnet graphs to adjust the edge weights of the graph
 cc_th=0.1 | Clustering coefficient threshold used to determine the Topic words to build the Jammin patterns
@@ -57,7 +57,7 @@ rep_size=128 | DeepWalk embedding representation size
 workers=-1 | Number of processes to use, -1 means use as many as there are cores in the CPU
 verbose=True | Controls whether progress messages are printed or not
 
+## Issues
+You can ignore several warnings of the form: 
 
-
-
-Note: you can ignore several warnings of the form ".local/lib/python3.6/site-packages/joblib/externals/loky/backend/resource_tracker.py:304: UserWarning: resource_tracker: /dev/shm/joblib_memmapping_folder_3714_d154fc4344634825bc067a9c6bafb91b_ca7e0135c15e4ab7a80f8c67136d4786/3714-139675070605072-4c051f2e9967473ab88d0caf0aff7d0a.pkl: FileNotFoundError(2, 'No such file or directory')" 
+*".local/lib/python3.6/site-packages/joblib/externals/loky/backend/resource_tracker.py:304: UserWarning: resource_tracker: /dev/shm/joblib_memmapping_folder_3714_d154fc4344634825bc067a9c6bafb91b_ca7e0135c15e4ab7a80f8c67136d4786/3714-139675070605072-4c051f2e9967473ab88d0caf0aff7d0a.pkl: FileNotFoundError(2, 'No such file or directory')" *
