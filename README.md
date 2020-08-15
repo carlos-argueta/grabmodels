@@ -23,8 +23,8 @@ Note: The following instructions are for Ubuntu and may apply to other similar u
 1. If this is the first time to use the program, you may need to make sure that the NLTK's stopwords are available. In a new terminal do the following:
      1. $ python3
      1. &gt;&gt;&gt; import nltk
-     1. >>> nltk.download('stopwords')
-     1. >>> quit()
+     1. &gt;&gt;&gt; nltk.download('stopwords')
+     1. &gt;&gt;&gt; quit()
      
 
 1. Within the folder grabmodels run
