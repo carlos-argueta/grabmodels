@@ -43,12 +43,19 @@ Hyperparameter | Description
 graph_sarcasm_dataset | The dataset with sarcastic texts
 step | The maximum separation between words when building the graph
 stopwords_list | List of stopwords to remove. Only used if remove_stop_words = True
-graph_news_datsaset | The dataset with neutral texts. Only used with *Minusnet* and *Jammin* graphs
-
-
-                 graph_sarcasm_dataset2=None, minus_diff_th=0.0, cc_th=0.1, centrality_th=0.0001, meta_patterns=[],
-                 min_freq=1, remove_stop_words=False, stemming=False, replace_entities=False, rep_size=128, workers=-1,
-                 verbose=True):
+graph_news_datsaset=None | The dataset with neutral texts. Only used with *Minusnet* and *Jammin* graphs
+graph_sarcasm_dataset2=None | Second optional dataset with sarcasm texts to generate the Jammin patterns from. If None, the mandatory graph_sarcasm_dataset is used instead
+minus_diff_th=0.0 | The threshold used when building Minusnet graphs to adjust the edge weights of the graph
+cc_th=0.1 | Clustering coefficient threshold used to determine the Topic words to build the Jammin patterns
+centrality_th=0.0001 | Betweenness Centrality threshold used to determine the Connector words to build the Jammin patterns
+meta_patterns=[] | The patterns templates used to build the Jammin patterns
+min_freq=1 | Minimum frequency of a pattern to be retained in the final list
+remove_stop_words=False | Remove stop words when building the graphs
+stemming=False | Stem words when building the graphs
+replace_entities=False | Replace Twitter entities when building the graphs
+rep_size=128 | DeepWalk embedding representation size 
+workers=-1 | Number of processes to use, -1 means use as many as there are cores in the CPU
+verbose=True | Controls whether progress messages are printed or not
 
 
 
