@@ -8,13 +8,13 @@ GrabModels or Graph-Based Compact Models, is a tool to create word and pattern e
 1. Clone the repository with $ git clone https://github.com/carlos-argueta/grabmodels.git
 1. (Optional) Create a virtual environment
 1. Enter the grabmodels folder and install dependencies: 
-      * $ cd grabmodels
-      * $ pip3 install -r requirements.txt
+      1. $ cd grabmodels
+      1. $ pip3 install -r requirements.txt
 1. Install DeepWalk
      1. $ git clone https://github.com/phanein/deepwalk.git
-     1. cd deepwalk
-     1. pip install -r requirements.txt (Note: DeepWalk uses Python 2)
-     1. python setup.py install
+     1. $ cd deepwalk
+     1. $ pip install -r requirements.txt (Note: DeepWalk uses Python 2)
+     1. $ python setup.py install
 
 ## Usage
 
@@ -27,9 +27,22 @@ Note: The following instructions are for Ubuntu and may apply to other similar u
      1. &gt;&gt;&gt; quit()
      
 
-1. Within the folder grabmodels run
-$ python3 grabmodels.py -t <graph_type>
+2. Within the folder grabmodels run $ python3 grabmodels.py -t <graph_type>
 
-Replace graph type with pathways, minusnet, or jammin to create a classifier end-to-end with one of the three different graph creation approaches.
-The code is configured to run the complete pipeline with the best reported parameters for each method. At this moment, in order to try other parameter 
-combinations you will have to open the file grabmodels.py and within one of the functions run_pathways_example(), run_minusnet_example(), and run_pathways_example(), add the corresponding parameters to the function calls get_pathways_model(), get_minusnet_model(), or get_jammin_model().
+
+Replace <graph_type> with pathways, minusnet, or jammin to create a classifier end-to-end with one of the three different graph creation approaches.
+
+### Hyperparameters
+
+The code is configured to run the complete pipeline with the best reported hyperparameters for each method in the paper. At this moment, in order to try other parameter combinations, you will have to open the file grabmodels.py and within one of the functions run_pathways_example(), run_minusnet_example(), and run_pathways_example(), add the corresponding parameters to the function calls get_pathways_model(), get_minusnet_model(), or get_jammin_model().
+
+The available hyperparameters are:
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
+
+Note: you can ignore several warnings of the form ".local/lib/python3.6/site-packages/joblib/externals/loky/backend/resource_tracker.py:304: UserWarning: resource_tracker: /dev/shm/joblib_memmapping_folder_3714_d154fc4344634825bc067a9c6bafb91b_ca7e0135c15e4ab7a80f8c67136d4786/3714-139675070605072-4c051f2e9967473ab88d0caf0aff7d0a.pkl: FileNotFoundError(2, 'No such file or directory')" 
