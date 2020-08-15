@@ -60,4 +60,4 @@ verbose=True | Controls whether progress messages are printed or not
 ## Issues
 You can ignore several warnings of the form: 
 
-*".local/lib/python3.6/site-packages/joblib/externals/loky/backend/resource_tracker.py:304: UserWarning: resource_tracker: /dev/shm/joblib_memmapping_folder_3714_d154fc4344634825bc067a9c6bafb91b_ca7e0135c15e4ab7a80f8c67136d4786/3714-139675070605072-4c051f2e9967473ab88d0caf0aff7d0a.pkl: FileNotFoundError(2, 'No such file or directory')" *
+*".local/lib/python3.6/site-packages/joblib/externals/loky/backend/resource_tracker.py:304: UserWarning: resource_tracker: /dev/shm/joblib_memmapping_folder_3714_d154fc4344634825bc067a9c6bafb91b_ca7e0135c15e4ab7a80f8c67136d4786/3714-139675070605072-4c051f2e9967473ab88d0caf0aff7d0a.pkl: FileNotFoundError(2, 'No such file or directory')"*
